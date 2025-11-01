@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+
+        <link rel="stylesheet" href="css/flash_cards.css">
+    <title> Flash Cards | Warriors Knowledge</title>
+    </head>
+
+<body>
+
+<div class="topnav">
+<a href="index.html">Home</a>
+<div class="dropdown">
+<a href="#">E-Ranks</a>
+<div class="dropdown-content">
+<a href="#">Air Force</a>
+<a href="#">Army (Coming Soon)</a>
+<a href="#">Navy (Coming Soon)</a>
+</div>
+</div>
+<a href="Article_Code_Of_Conduct.html">Articles Co. Of Conduct</a>
+</div>
+
+<main>
+<h1>Air Force Locations</h1>
+
+<div class="card" id="flashcard-1">
+<div class="front-card">
+<h2>Air Mobility Command (AMC)</h2>  
+</div>
+  
+<div class="back-card">
+<h2>Scott AFB, Illnois</h2>
+</div>
+</div>
+
+<div class="card-2" id="flashcard-2">
+<h2>Air Combat Command (ACC)</h2>
+</div>
+
+<div class="back-card-2">
+<h2>Joint Base Langley-Eustis, Virginia</h2>
+</div>
+
+
+<div class="card-3" id="flashcard-3">
+<h2>AFROTC Headquarters</h2>
+</div>
+
+<div class="card-4" id="flashcard-4">
+<h2>Holm Center Headquarters</h2>
+</div>
+</main>
+
+<script>
+
+const joinlist = () => {
+
+  const flash_card = document.querySelector(".card");
+
+   flash_card.classList.toggle("flash_card_flipped");
+
+}
+document.getElementById("flashcard-1").addEventListener("click", joinlist);
+</script>
+</body>
+</html>
+

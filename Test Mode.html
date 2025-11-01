@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device=width, initial-scale=1.0">
+
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+    <title> Test Mode | Warrior's Knowledge</title>
+    </head>
+
+
+<body>
+
+
+<main>
+
+<p id="minutes">25:00:00 minutes <strong>remaining</strong></p>
+
+<div class="quiz-container">
+
+</div>
+</main>
+
+<script>
+
+window.addEventListener('load', start_timer);
+
+let minuteInterval; // stores this with the element ID
+let time_left = 25*60;
+
+function start_timer() {
+
+minute_remaining.textContent = "25:00 minutes remaining";
+
+ const minute_remaining = document.getElementById("minutes");
+
+ minuteInterval = setInterval(() => {
+    time_left--; // decrementing the timer
+
+    const mins = Math.floor(time_left / 60);
+    const seconds = time_left % 60;
+
+    minute_remaining.textContent = `${String(mins).padStart(2,'0')}:${String(seconds).padStart(2, '0')} minutes remaining`;
+
+if (time_left === 0) {
+    
+    clearInterval(minuteInterval); // stops the timer
+    end_timer();
+}
+ }, 1000);
+
+ 
+function end_timer() {
+    const minute_remaining = document.getElementById("minutes");
+    minute_remaining.textContent = "00:00 minutes - Quiz has ended! \n";
+  }
+}
+</script>
+</body>
+</html>

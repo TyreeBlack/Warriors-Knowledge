@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="CSS/music.css">
+
+        <title> Airman's Creed & Air Force Song Playback</title>
+    </head>
+
+<body>
+<div class="topnav">
+<div class="setting-dropdown">
+<i class="fa-solid fa-grip-lines"></i>
+<div class="setting-dropdown-content">
+</div>
+</div>
+<a href="">Home</a>
+<a href="Article_Code_Of_Conduct.html">Articles Co. of Conduct</a>
+<div class="dropdown">
+<a href="E-ranks">E-Ranks<i class="fa-solid fa-caret-down"></i></a>
+<div class="dropdown-content">
+<a href="AF-branch">Air Force</a>
+<a href="Army-Branch">Army (Coming Soon)</a>
+<a href="Navy-branch">Navy (Coming Soon)</a> 
+</div>
+</div>
+<a href="Flash Cards.html">Flash Cards</a><i class="fa-solid fa-caret-down" class="faret-down-1"></i></a>
+<a href="Test Mode.html">Test Mode</a>
+</div>
+
+<main>
+
+<div class="Airforce_Song_Container">
+<img src="images/Air Force Song.png" class="airforce_musiccover" width="440px" height="440px">
+
+<h1>Air Force Song</h1>
+<h1>'Artist Name'</h1>
+<div class="play_track">
+<i class="fa-solid fa-play" onclick="playpauseTrack()"></i>
+<i class="fa-solid fa-circle"></i>
+</div>
+
+<div class="forward_track">
+<i class="fa-solid fa-forward-step" onclick="nextTrack()"></i>
+</div>
+
+<div class="prev_track">
+<i class="fa-solid fa-backward-step" onclick="prevTrack()"></i>
+</div>
+</div>
+
+<div class="slider-container">
+<div class="current_time">00:00</div>
+<input type="range" class="slider" min="1" max="100"
+ value="0" class="seek_slider" onchange="seekTo()">
+ <div class="end_duration">00:00</div>
+</div>
+
+<div class="volume-container">
+<i class="fa-solid fa-volume-low"></i>
+<input type="range" min="1" max="99"
+value="99" class="volume_slider" onchange="setVolume()">
+<i class="fa-solid fa-volume-high"></i>
+</div>
+
+</main>
+<script>
+
+function play_features() {
+
+let playbutton_btn = document.querySelector(".play_track");
+let forwardbutton_btn = document.querySelector(".forward_track");
+let prevbutton_btn = document.querySelector(".prev_track");
+
+let seek_slider_btn = document.querySelector(".seek_slider");
+let volume_slider_btn = document.querySelector(".volume_slider");
+
+let curr_time_stamp = document.querySelector(".current_time");
+let end_duration_stamp  = document.querySelector(".end_duration");
+
+
+let track_index = 0;
+let isPlaying = false;
+let updateTimer;
+
+// creating an element for audio input & output
+let current_track = document.createElement('audio');
+
+}
+</script>
+</body>
+</html>
