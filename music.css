@@ -1,0 +1,163 @@
+
+body {
+    background-color:bisque;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 21px;
+    text-align: center;
+    position: relative;
+    left: -40px;
+    bottom: -50px;
+}
+
+.fa-play {
+    font-size: 55px;
+    color: blue!important;
+    align-items: center;
+    z-index: 2000;
+    position: relative;
+    right: -785px;
+    bottom: -105px;
+    cursor: pointer;
+    
+}
+
+.fa-circle {
+    font-size: 70px;
+    color: white!important;
+    align-items: center;
+    z-index: 1000;
+    position: relative;
+    right: -720px;
+    bottom: -110px;
+}
+
+.fa-forward-step {
+    font-size: 40px;
+    color: blue!important;
+    align-items: center;
+    z-index: 1000;
+    position: relative;
+    right: -880px;
+    bottom: -125px;
+    cursor: pointer;
+
+}
+
+.fa-backward-step {
+    font-size: 40px;
+    color: blue!important;
+    align-items: center;
+    z-index: 1000;
+    position: relative;
+    right: -690px;
+    bottom: -85px;
+    cursor: pointer;
+
+}
+
+.fa-volume-low {
+    font-size: 20px;
+    position: relative;
+    right: -690px;
+    bottom: -150px;
+    cursor: pointer;
+
+}
+
+.fa-volume-high {
+    font-size: 20px;
+    position: relative;
+    right: -750px;
+    bottom: -150px;
+    cursor: pointer;
+}
+
+.airforce_musiccover {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -600px;
+    bottom: -50px;
+}
+
+.topnav {
+    background-color: navy;
+    box-shadow: 0 0 4px lightgray, 0 0 4px lightgray;
+    display: flex;
+    overflow: visible;
+    line-height: 60px;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    z-index: 2000;
+}
+
+.topnav a {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 21px;
+    color: white;
+    text-align: center;
+    padding: 17px 17px;
+    text-decoration: none;
+    float: left;
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    float: left;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: white;
+    box-shadow: 0 0 4px gray, 0 0 4px gray;
+    padding: 30px;
+    width: 130px;
+    top: 100%;
+    left: 0;
+    position: absolute;
+}
+
+.dropdown-content a {
+    font-size: 19px;
+    color: black;
+    white-space: nowrap;
+    
+}
+
+.dropown:hover .dropdown-content {
+    display: block;
+}
+
+.current_time {
+    justify-content: center;
+    position: relative;
+    bottom: -150px;
+    right: -680px;
+}
+
+.slider {
+    position: relative;
+    bottom: -130px;
+    right: -740px;
+}
+
+.end_duration {
+    justify-content: center;
+    position: relative;
+    bottom: -110px;
+    right: -890px;
+}
+
+.volume_slider {
+    position: relative;
+    bottom: -150px;
+    right: -720px;
+}
